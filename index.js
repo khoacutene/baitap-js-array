@@ -13,6 +13,7 @@ let submit = () => {
     tinhTong()
     duongNhoNhat()
     soNhoNhat()
+    soCuoiCung()
     SNT()
     soNguyen()
     soSanh()
@@ -56,6 +57,8 @@ let soCuoiCung = () => {
     let ketQua = -1;
     numberArr.forEach ((item) => {
         if (item % 2 === 0) {
+            ketQua = item
+            document.getElementById("soChanCuoiCung").innerHTML= `<h3 style="color:red" >Số chẵn cuối cùng: [${ketQua}]</h3>`
 
         }
     })
